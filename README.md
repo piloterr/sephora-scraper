@@ -71,7 +71,7 @@ response = requests.get(
     params={
         "query": "https://www.sephora.fr/p/midnight-espresso---eau-de-parfum-au-cafe-831955.html",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -242,7 +242,7 @@ response = requests.get(
     params={
         "query": "mascara",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
